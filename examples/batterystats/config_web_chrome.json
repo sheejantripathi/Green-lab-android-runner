@@ -1,0 +1,37 @@
+{
+  "type": "web",
+  "devices": {
+    "temp": {
+      "root_disable_charging": "True",
+      "charging_disabled_value": 0,
+      "usb_charging_disabled_file": "/sys/class/power_supply/usb/device/charge"
+    }
+  },
+  "repetitions": 1,
+  "duration": 10000,
+  "browsers": ["chrome"],
+  "systrace_path": "/usr/lib/android-sdk/platform-tools/systrace/systrace.py",
+  "powerprofile_path": "/home/pi/android-runner/examples/batterystats/power_profile.xml",
+  "paths": [
+    "https://www.wordpress.org", "https://www.amazon.com", "https://finance.yahoo.com"
+  ],
+  "profilers": {
+    "batterystats": {
+      "cleanup": "true",
+      "subject_aggregation": "default",
+      "experiment_aggregation": "default",
+      "enable_systrace_parsing": true,
+      "python2_path": "python2"
+    }
+  },
+  "scripts": {
+    "before_experiment": "Scripts/before_experiment.py",
+    "before_run": "Scripts/before_run.py",
+    "after_launch": "Scripts/after_launch.py",
+    "interaction": "Scripts/interaction.py",
+    "before_close": "Scripts/before_close.py",
+    "after_run": "Scripts/after_run.py",
+    "after_experiment": "Scripts/after_experiment.py"
+  },
+  "time_between_run": 30000
+}
