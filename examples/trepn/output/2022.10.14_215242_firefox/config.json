@@ -1,0 +1,46 @@
+{
+  "type": "web",
+  "devices": {
+    "temp": {
+      "root_disable_charging": "True",
+      "charging_disabled_value": 0,
+      "usb_charging_disabled_file": "/sys/class/power_supply/usb/device/charge"
+    }
+  },
+  "repetitions": 1,
+  "randomization": false,
+  "browsers": [
+    "firefox"
+  ],
+  "systrace_path": "/usr/lib/android-sdk/platform-tools/systrace/systrace.py",
+  "paths": [
+    "https://www.wordpress.org", "https://www.amazon.com", "https://finance.yahoo.com", "https://www.kickstarter.com", "https://www.youtube.com",
+    "https://www.theatlantic.com", "https://udemy.com", "https://www.wikipedia.com", "https://www.skysports.com", "https://www.nbcnews.com",
+    "https://alibabacloud.com", "https://www.stackoverflow.com", "https://www.bookmyshow.com", "https://archive.org", "https://www.mit.edu",
+    "https://www.pornhub.com", "https://www.pcgamer.com", "https://www.cic.gc.ca", "https://www.paypal.com", "https://www.tinder.com"
+  ],
+  "profilers": {
+    "trepn": {
+      "subject_aggregation": "default",
+      "experiment_aggregation": "Scripts/aggregate_trepn.py",
+      "preferences": {
+        "profiling_interval": 100,
+        "battery_power_source_selection": "Direct Power"
+      },
+      "data_points": [
+        "battery_power","battery_remaining", "mem_usage","cpu_load","cpu1_freq","cpu2_freq","cpu3_freq","cpu4_freq",
+        "cpu5_freq","cpu6_freq","gpu_load","gpu_freq","mobile_data","wifi"
+      ]
+    }
+  },
+  "scripts": {
+    "before_experiment": "Scripts/before_experiment.py",
+    "before_run": "Scripts/before_run.py",
+    "after_launch": "Scripts/after_launch.py",
+    "interaction": "Scripts/interaction.py",
+    "before_close": "Scripts/before_close.py",
+    "after_run": "Scripts/after_run.py",
+    "after_experiment": "Scripts/after_experiment.py"
+  },
+  "time_between_run": 5000
+}

@@ -1,0 +1,2 @@
+Battery Power* [uW] (Delta),Battery Power* [uW] (Raw),Battery Remaining (%) [%],CPU Load [%],CPU1 Frequency [kHz],CPU2 Frequency [kHz],CPU3 Frequency [kHz],CPU4 Frequency [kHz],CPU5 Frequency [kHz],CPU6 Frequency [kHz],GPU Frequency [KHz],GPU Load [%],Memory Usage [KB],Mobile Data State,Wi-Fi State
+16183.958333333334,127314.72916666667,11.0,0.0,1744800.0,1743523.4042553192,1743523.4042553192,1745565.9574468085,1745565.9574468085,1745565.9574468085,365125.0,3.8125,5450572.666666667,5.591836734693878,1.0
