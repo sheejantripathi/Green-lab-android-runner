@@ -63,20 +63,24 @@ class Progress(object):
         run_id = 0
         for device in config['devices']:
             current_paths = config.get('paths', []) + config.get('apps', [])
-            for path in current_paths:
+            #for path in current_paths:
+            for run in range(config['repetitions']):
                 if config['type'] == 'web':
                     for browser in config['browsers']:
-                        subject_xml = self.build_subject_xml(device, path, browser)
-                        for run in range(config['repetitions']):
+                        #subject_xml = self.build_subject_xml(device, path, browser)
+                        #for run in range(config['repetitions']):
+                        for path in current_paths:
+                            subject_xml = self.build_subject_xml(device, path, browser)
                             runs_xml = runs_xml + '<run runId="{}">{}<runCount>{}</runCount></run>'. \
                                 format(run_id, subject_xml, run + 1)
                             run_id += 1
                 else:
-                    subject_xml = self.build_subject_xml(device, path)
                     for run in range(config['repetitions']):
-                        runs_xml = runs_xml + '<run runId="{}">{}<runCount>{}</runCount></run>'. \
-                            format(run_id, subject_xml, run + 1)
-                        run_id += 1
+                        for path in current_paths:
+                            subject_xml = self.build_subject_xml(device, path)
+                            runs_xml = runs_xml + '<run runId="{}">{}<runCount>{}</runCount></run>'. \
+                                format(run_id, subject_xml, run + 1)
+                            run_id += 1
 
         return runs_xml
 
