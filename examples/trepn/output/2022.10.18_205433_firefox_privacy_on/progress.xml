@@ -1,0 +1,247 @@
+<experiment>
+  <configHash>39bcfa0745cc2692d97088c3631b58ea</configHash>
+  <outputDir>/home/pi/Green-lab-android-runner/examples/trepn/output/2022.10.18_205433/</outputDir>
+  <runsToRun/>
+  <runsDone>
+    <run runId="0">
+      <device>samsung</device>
+      <path>https://www.wordpress.org</path>
+      <browser>firefox</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="1">
+      <device>samsung</device>
+      <path>https://www.amazon.com</path>
+      <browser>firefox</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="2">
+      <device>samsung</device>
+      <path>https://finance.yahoo.com</path>
+      <browser>firefox</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="3">
+      <device>samsung</device>
+      <path>https://www.kickstarter.com</path>
+      <browser>firefox</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="4">
+      <device>samsung</device>
+      <path>https://www.youtube.com</path>
+      <browser>firefox</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="5">
+      <device>samsung</device>
+      <path>https://www.theatlantic.com</path>
+      <browser>firefox</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="6">
+      <device>samsung</device>
+      <path>https://udemy.com</path>
+      <browser>firefox</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="7">
+      <device>samsung</device>
+      <path>https://www.wikipedia.com</path>
+      <browser>firefox</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="8">
+      <device>samsung</device>
+      <path>https://www.skysports.com</path>
+      <browser>firefox</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="9">
+      <device>samsung</device>
+      <path>https://www.nbcnews.com</path>
+      <browser>firefox</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="10">
+      <device>samsung</device>
+      <path>https://alibabacloud.com</path>
+      <browser>firefox</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="11">
+      <device>samsung</device>
+      <path>https://www.stackoverflow.com</path>
+      <browser>firefox</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="12">
+      <device>samsung</device>
+      <path>https://www.bookmyshow.com</path>
+      <browser>firefox</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="13">
+      <device>samsung</device>
+      <path>https://archive.org</path>
+      <browser>firefox</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="14">
+      <device>samsung</device>
+      <path>https://www.mit.edu</path>
+      <browser>firefox</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="15">
+      <device>samsung</device>
+      <path>https://www.pornhub.com</path>
+      <browser>firefox</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="16">
+      <device>samsung</device>
+      <path>https://www.pcgamer.com</path>
+      <browser>firefox</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="17">
+      <device>samsung</device>
+      <path>https://www.cic.gc.ca</path>
+      <browser>firefox</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="18">
+      <device>samsung</device>
+      <path>https://www.paypal.com</path>
+      <browser>firefox</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="19">
+      <device>samsung</device>
+      <path>https://www.tinder.com</path>
+      <browser>firefox</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="20">
+      <device>samsung</device>
+      <path>https://www.wordpress.org</path>
+      <browser>firefox</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="21">
+      <device>samsung</device>
+      <path>https://www.amazon.com</path>
+      <browser>firefox</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="22">
+      <device>samsung</device>
+      <path>https://finance.yahoo.com</path>
+      <browser>firefox</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="23">
+      <device>samsung</device>
+      <path>https://www.kickstarter.com</path>
+      <browser>firefox</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="24">
+      <device>samsung</device>
+      <path>https://www.youtube.com</path>
+      <browser>firefox</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="25">
+      <device>samsung</device>
+      <path>https://www.theatlantic.com</path>
+      <browser>firefox</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="26">
+      <device>samsung</device>
+      <path>https://udemy.com</path>
+      <browser>firefox</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="27">
+      <device>samsung</device>
+      <path>https://www.wikipedia.com</path>
+      <browser>firefox</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="28">
+      <device>samsung</device>
+      <path>https://www.skysports.com</path>
+      <browser>firefox</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="29">
+      <device>samsung</device>
+      <path>https://www.nbcnews.com</path>
+      <browser>firefox</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="30">
+      <device>samsung</device>
+      <path>https://alibabacloud.com</path>
+      <browser>firefox</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="31">
+      <device>samsung</device>
+      <path>https://www.stackoverflow.com</path>
+      <browser>firefox</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="32">
+      <device>samsung</device>
+      <path>https://www.bookmyshow.com</path>
+      <browser>firefox</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="33">
+      <device>samsung</device>
+      <path>https://archive.org</path>
+      <browser>firefox</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="34">
+      <device>samsung</device>
+      <path>https://www.mit.edu</path>
+      <browser>firefox</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="35">
+      <device>samsung</device>
+      <path>https://www.pornhub.com</path>
+      <browser>firefox</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="36">
+      <device>samsung</device>
+      <path>https://www.pcgamer.com</path>
+      <browser>firefox</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="37">
+      <device>samsung</device>
+      <path>https://www.cic.gc.ca</path>
+      <browser>firefox</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="38">
+      <device>samsung</device>
+      <path>https://www.paypal.com</path>
+      <browser>firefox</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="39">
+      <device>samsung</device>
+      <path>https://www.tinder.com</path>
+      <browser>firefox</browser>
+      <runCount>2</runCount>
+    </run>
+  </runsDone>
+</experiment>
