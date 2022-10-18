@@ -2,7 +2,7 @@ import pytest
 from mock import Mock, patch
 
 from AndroidRunner.BrowserFactory import BrowserFactory
-from AndroidRunner.Browsers import Browser, Chrome, Firefox, Opera
+from AndroidRunner.Browsers import Browser, Chrome, Firefox, Opera, Brave
 
 
 class TestBrowsers(object):
@@ -18,6 +18,9 @@ class TestBrowsers(object):
 
     def test_get_browser_firefox(self):
         assert isinstance(BrowserFactory.get_browser('firefox'), Firefox.Firefox.__class__)
+
+    def test_get_browser_brave(self):
+        assert isinstance(BrowserFactory.get_browser('brave'), Brave.Brave.__class__)
 
     def test_get_browser_fake(self):
         with pytest.raises(Exception) as except_result:
@@ -36,6 +39,9 @@ class TestBrowsers(object):
     def test_browsers_to_string_firefox(self, browser):
         assert BrowserFactory.get_browser('firefox')().to_string() == 'org.mozilla.firefox'
 
+    def test_browsers_to_string_brave(self, browser):
+        assert BrowserFactory.get_browser('brave')().to_string() == 'com.brave.browser'
+
     def test_chrome_init(self):
         chrome_browser = Chrome.Chrome()
 
@@ -53,6 +59,12 @@ class TestBrowsers(object):
 
         assert opera_browser.package_name == 'com.opera.browser'
         assert opera_browser.main_activity == 'com.opera.Opera'
+
+    def test_brave_init(self):
+        brave_browser = Brave.Brave()
+
+        assert brave_browser.package_name == 'com.brave.browser'
+        assert brave_browser.main_activity =='com.google.android.apps.chrome.Main'
 
     @patch('logging.Logger.info')
     def test_start(self, mock_log, browser):
