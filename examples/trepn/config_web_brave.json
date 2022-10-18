@@ -7,15 +7,14 @@
       "usb_charging_disabled_file": "/sys/class/power_supply/usb/device/charge"
     }
   },
-  "repetitions": 2,
-  "duration": 5000,
+  "repetitions": 1,
   "randomization": false,
   "browsers": [
     "brave"
   ],
   "systrace_path": "/usr/lib/android-sdk/platform-tools/systrace/systrace.py",
   "paths": [
-    "https://www.wordpress.org", "https://www.amazon.com", "https://finance.yahoo.com"
+    "https://www.wordpress.org", "https://www.amazon.com", "https://finance.yahoo.com", "https://www.kickstarter.com"
   ],
   "profilers": {
     "trepn": {
@@ -40,5 +39,5 @@
     "after_run": "Scripts/after_run.py",
     "after_experiment": "Scripts/after_experiment.py"
   },
-  "time_between_run": 10000
+  "time_between_run": 5000
 }

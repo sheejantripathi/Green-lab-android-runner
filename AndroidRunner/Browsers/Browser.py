@@ -21,7 +21,8 @@ class Browser(ABC):
 
     def stop(self, device, clear_data=False):
         self.logger.info('%s: Stop' % device.id)
-        device.force_stop(self.package_name)
+        device.press_back(self.package_name)
+        device.kill(self.package_name)
         if clear_data:
             device.clear_app_data(self.package_name)
 

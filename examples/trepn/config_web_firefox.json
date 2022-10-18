@@ -1,7 +1,7 @@
 {
   "type": "web",
   "devices": {
-    "temp": {
+    "samsung": {
       "root_disable_charging": "True",
       "charging_disabled_value": 0,
       "usb_charging_disabled_file": "/sys/class/power_supply/usb/device/charge"
@@ -12,12 +12,8 @@
   "browsers": [
     "firefox"
   ],
-  "systrace_path": "/usr/lib/android-sdk/platform-tools/systrace/systrace.py",
   "paths": [
-    "https://www.wordpress.org", "https://www.amazon.com", "https://finance.yahoo.com", "https://www.kickstarter.com", "https://www.youtube.com",
-    "https://www.theatlantic.com", "https://udemy.com", "https://www.wikipedia.com", "https://www.skysports.com", "https://www.nbcnews.com",
-    "https://alibabacloud.com", "https://www.stackoverflow.com", "https://www.bookmyshow.com", "https://archive.org", "https://www.mit.edu",
-    "https://www.pornhub.com", "https://www.pcgamer.com", "https://www.cic.gc.ca", "https://www.paypal.com", "https://www.tinder.com"
+    "https://www.wordpress.org", "https://www.amazon.com", "https://finance.yahoo.com", "https://www.kickstarter.com", "https://www.youtube.com"
   ],
   "profilers": {
     "trepn": {

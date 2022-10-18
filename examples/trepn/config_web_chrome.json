@@ -12,7 +12,6 @@
   "browsers": [
     "chrome"
   ],
-  "systrace_path": "/usr/lib/android-sdk/platform-tools/systrace/systrace.py",
   "paths": [
     "https://www.wordpress.org", "https://www.amazon.com", "https://finance.yahoo.com", "https://www.kickstarter.com", "https://www.youtube.com",
     "https://www.theatlantic.com", "https://udemy.com", "https://www.wikipedia.com", "https://www.skysports.com", "https://www.nbcnews.com",

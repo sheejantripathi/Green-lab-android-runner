@@ -203,6 +203,14 @@ class Device:
         """Force stop an app by package name"""
         Adb.shell(self.id, 'am force-stop %s' % name)
 
+    def press_back(self, name):
+        """Kill an app by package name"""
+        Adb.shell(self.id, 'input keyevent 4')
+
+    def kill(self, name):
+        """Kill an app by package name"""
+        Adb.shell(self.id, 'am kill %s' % name)
+
     def clear_app_data(self, name):
         """Clears the data of an app by package name"""
         Adb.clear_app_data(self.id, name)
