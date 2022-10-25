@@ -201,7 +201,7 @@ class Experiment(object):
             premature_stoppable_run.run()
         else:
             self.interaction(device, path, run)
-
+        time.sleep(25)
         self.stop_profiling(device, path, run)
         self.usb_handler.enable_usb()
 
