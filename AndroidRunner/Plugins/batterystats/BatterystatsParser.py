@@ -394,7 +394,7 @@ def parse_systrace(app, systrace_file, logcat, batterystats, power_profile, core
                             pass
                         elif (current_activity == activity == 'cpu_frequency') and (current_state != state):
                             duration = current_time - time
-                            cpu_intensity = get_amp_value(power_profile, activity, state)
+                            cpu_intensity = get_amp_value(power_profile, 'cpu.idle')
                             energy_consumption = calculate_energy_usage(cpu_intensity, voltage, duration)
                             results.append('{},{},{},core {} {},{}'.format
                                            (time - start_time, current_time - start_time,
@@ -404,7 +404,7 @@ def parse_systrace(app, systrace_file, logcat, batterystats, power_profile, core
                             state = current_state
                         elif current_activity == 'cpu_idle' and activity == 'cpu_frequency':
                             duration = current_time - time
-                            cpu_intensity = get_amp_value(power_profile, activity, state)
+                            cpu_intensity = get_amp_value(power_profile, 'cpu.idle')
                             energy_consumption = calculate_energy_usage(cpu_intensity, voltage, duration)
                             results.append('{},{},{},core {} {},{}'.format
                                            (time - start_time, current_time - start_time,

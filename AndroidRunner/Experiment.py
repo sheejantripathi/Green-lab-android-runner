@@ -199,7 +199,9 @@ class Experiment(object):
             self.queue = mp.Queue()
             premature_stoppable_run = PrematureStoppableRun(self.run_stopping_condition_config, self.queue, self.interaction, device, path, run)
             premature_stoppable_run.run()
+            print("I'm in experiment if!")
         else:
+            print("I'm in experiment else!")
             self.interaction(device, path, run)
         time.sleep(25)
         self.stop_profiling(device, path, run)

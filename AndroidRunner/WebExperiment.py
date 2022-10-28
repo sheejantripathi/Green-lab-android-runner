@@ -34,9 +34,11 @@ class WebExperiment(Experiment):
             self.queue = mp.Queue()
             premature_stoppable_run = PrematureStoppableRun(self.run_stopping_condition_config, self.queue, self.interaction, device, path, run, **kwargs)
             premature_stoppable_run.run()
+            print("I'm in web-experiment if!")
         else:
+            print("I'm in web-experiment else!")
             self.interaction(device, path, run, **kwargs)
-
+        time.sleep(10)    
         self.stop_profiling(device, path, run, **kwargs)
         self.usb_handler.enable_usb()
 
@@ -69,7 +71,7 @@ class WebExperiment(Experiment):
         time.sleep(5)
         super(WebExperiment, self).interaction(device, path, run, *args, **kwargs)
         # TODO: Fix web experiments running longer than self.duration
-        time.sleep(self.duration)
+        #time.sleep(self.duration)
 
     def after_run(self, device, path, run, *args, **kwargs):
         kwargs['browser'].stop(device, self.clear_cache)

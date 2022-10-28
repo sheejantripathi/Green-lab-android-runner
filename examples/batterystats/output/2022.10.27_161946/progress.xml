@@ -1,0 +1,25 @@
+<experiment>
+  <configHash>fc272ef20fca61978be99e39a85eb724</configHash>
+  <outputDir>/home/pi/Green-lab-android-runner/examples/batterystats/output/2022.10.27_161946/</outputDir>
+  <runsToRun>
+    <run runId="0">
+      <device>temp</device>
+      <path>https://www.wordpress.org</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="1">
+      <device>temp</device>
+      <path>https://www.amazon.com</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="2">
+      <device>temp</device>
+      <path>https://finance.yahoo.com</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+  </runsToRun>
+  <runsDone/>
+</experiment>

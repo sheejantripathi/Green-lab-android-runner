@@ -2,20 +2,26 @@
   "type": "web",
   "devices": {
     "temp": {
-      "root_disable_charging": "True"
+      "root_disable_charging": "True",
+      "charging_disabled_value": 0,
+      "usb_charging_disabled_file": "/sys/class/power_supply/usb/device/charge"
     }
   },
   "repetitions": 1,
   "duration": 10000,
-  "browsers": ["firefox"],
+  "browsers": ["chrome"],
   "systrace_path": "/usr/lib/android-sdk/platform-tools/systrace/systrace.py",
-  "powerprofile_path": "/home/pi/Green-lab-android-runner/examples/batterystats/power_profile_nokia.xml",
+  "powerprofile_path": "/home/pi/android-runner/examples/batterystats/power_profile_moto.xml",
   "paths": [
-    "https://www.wordpress.org", "https://www.amazon.com", "https://finance.yahoo.com", "https://www.kickstarter.com"
+    "https://www.wordpress.org", "https://www.amazon.com", "https://finance.yahoo.com"
   ],
   "profilers": {
     "batterystats": {
-      "cleanup": false
+      "cleanup": "true",
+      "subject_aggregation": "default",
+      "experiment_aggregation": "default",
+      "enable_systrace_parsing": true,
+      "python2_path": "python2"
     }
   },
   "scripts": {

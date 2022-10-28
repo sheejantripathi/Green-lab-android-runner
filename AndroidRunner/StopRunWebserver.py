@@ -13,6 +13,7 @@ class StopRunWebserver(BaseHTTPRequestHandler):
         """ Handles incoming HTTP GET requests by:
             - Showing a simple webpage telling that the server is running and ready for accepting requests.
         """
+        #StopRunWebserver.called = True
         self.send_response(200)
         self.send_header("Content-type", "text/html")
         self.end_headers()
@@ -28,11 +29,12 @@ class StopRunWebserver(BaseHTTPRequestHandler):
             2. Stopping the server so the process can write to the queue and the run is stopped.
         """ 
         self.logger = logging.getLogger(self.__class__.__name__)
+        print('@@@@@@@@@@@@ self.headers["Content-Length"]',self.headers["Content-Length"])
 
         if self.headers["Content-Length"] != None and int(self.headers["Content-Length"]) > 0:
             content_length = int(self.headers['Content-Length'])
             post_data = self.rfile.read(content_length)
-
+            print("Paths.outputdir result = "+paths.OUTPUT_DIR+"\n")
             dir_path = op.join(paths.OUTPUT_DIR, "http_post_request_payloads") 
             makedirs(dir_path)
 

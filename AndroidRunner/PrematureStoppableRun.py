@@ -1,10 +1,14 @@
 import logging
 from .StopRunWebserver import StopRunWebserver
+from .Sx5Webserver import Sx5Webserver
 from .util import ConfigError, keyboardinterrupt_handler
 import time
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import multiprocessing as mp
 import psutil
+
+time_start = 0
+time_end = 0
 
 class PrematureStoppableRun(object):
     """ Starts a run that is stopped prematurely when:
@@ -39,6 +43,11 @@ class PrematureStoppableRun(object):
     STOPPING_MECHANISM_HTTP_POST_REQUEST = "HTTP POST request"
     STOPPING_MECHANISM_LOGCAT_REGEX = "matching regex"
     STOPPING_MECHANISM_FUNCTION_CALL = "stop() function call"
+    keep_running = True
+
+    iteration_id = 0
+    filename = "timer_browser.csv"
+    
 
     def __init__(self, run_stopping_condition_config, queue, interaction_function, device, path, run, *args, **kwargs):
         """ Creates a PrematureStoppableRun instance. 
@@ -140,11 +149,19 @@ class PrematureStoppableRun(object):
                 The port on which the local webserver is started.
         """
         self.logger.info(f"Starting webserver on port {server_port}.")
-        webServer = HTTPServer(("", server_port), StopRunWebserver)
-
+        webServer = HTTPServer(("192.168.119.140", server_port), StopRunWebserver)
+        # time_start = time.time()
+        #global filename
+        #with open(self.filename, "a+") as f:
+            #f.write("Start timing for iteration_id "+ str(self.iteration_id) + "is "+str(time_start)+"\n")
+            #print("Start timing for iteration_id "+ str(self.iteration_id) + "is "+str(time_start)+"\n")
         # We "serve_forever" but the server will stop itself when a HTTP POST request was received.
-        webServer.serve_forever()
+        while self.keep_running:
+            webServer.handle_request()
+        print('!!!! quqeue',queue)
         queue.put(PrematureStoppableRun.STOPPING_MECHANISM_HTTP_POST_REQUEST)
+
+        
 
     def run(self):
         """ Runs the interaction (run) process in a new process which can be prematurely stopped by
@@ -155,6 +172,7 @@ class PrematureStoppableRun(object):
         # Start either a local webserver or continuously check the devices logcat for a regex in a new process.
         # When the condition is set to "function" we don't need to start another process, only the interaction process.
         if self.condition == "post_request":
+            print('!!!!!!!!!!!!!!!!!!!! inside post_request')
             procs.append(mp.Process(target=self._mp_post_request, args=(self.queue, self.server_port,)))
         elif self.condition == "logcat_regex":
             procs.append(mp.Process(target=self._mp_logcat_regex, args=(self.queue, self.device, self.regex,)))
@@ -166,7 +184,18 @@ class PrematureStoppableRun(object):
             proc.start()
 
         # Wait till one of the created processes writes to the queue. It means that that process is finished.
+        
         res = self.queue.get()
+        print('############# I am res',res)
+        
+        
+        #global filename
+        #time_end = time.time()
+        #with open(self.filename, "a+") as f:
+            #f.write("Stop timing for iteration_id "+ str(self.iteration_id) + "is "+str(time_end)+"\n")
+            #print("Stop timing for iteration_id "+ str(self.iteration_id) + "is "+str(time_end)+"\n")
+            #f.write("Time-difference: "+str(time_end - time_start)+"\n")
+            #print("Time-difference: "+str(time_end - time_start)+"\n")
 
         if res != "interaction":
             self.logger.info(f"Run was prematurely stopped by means of a(n) {res}.")
