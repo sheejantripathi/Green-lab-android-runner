@@ -1,0 +1,247 @@
+<experiment>
+  <configHash>2d0b46d602cc329fc2da2770f03f5bc1</configHash>
+  <outputDir>/home/pi/Green-lab-android-runner/examples/trepn/output/2022.11.01_123808/</outputDir>
+  <runsToRun/>
+  <runsDone>
+    <run runId="0">
+      <device>temp</device>
+      <path>https://www.wordpress.org</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="1">
+      <device>temp</device>
+      <path>https://www.wordpress.org</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="2">
+      <device>temp</device>
+      <path>https://www.amazon.com</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="3">
+      <device>temp</device>
+      <path>https://www.amazon.com</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="4">
+      <device>temp</device>
+      <path>https://finance.yahoo.com</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="5">
+      <device>temp</device>
+      <path>https://finance.yahoo.com</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="6">
+      <device>temp</device>
+      <path>https://www.kickstarter.com</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="7">
+      <device>temp</device>
+      <path>https://www.kickstarter.com</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="8">
+      <device>temp</device>
+      <path>https://www.youtube.com</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="9">
+      <device>temp</device>
+      <path>https://www.youtube.com</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="10">
+      <device>temp</device>
+      <path>https://www.theatlantic.com</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="11">
+      <device>temp</device>
+      <path>https://www.theatlantic.com</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="12">
+      <device>temp</device>
+      <path>https://udemy.com</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="13">
+      <device>temp</device>
+      <path>https://udemy.com</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="14">
+      <device>temp</device>
+      <path>https://www.wikipedia.com</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="15">
+      <device>temp</device>
+      <path>https://www.wikipedia.com</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="16">
+      <device>temp</device>
+      <path>https://www.skysports.com</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="17">
+      <device>temp</device>
+      <path>https://www.skysports.com</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="18">
+      <device>temp</device>
+      <path>https://www.nbcnews.com</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="19">
+      <device>temp</device>
+      <path>https://www.nbcnews.com</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="20">
+      <device>temp</device>
+      <path>https://alibabacloud.com</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="21">
+      <device>temp</device>
+      <path>https://alibabacloud.com</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="22">
+      <device>temp</device>
+      <path>https://www.stackoverflow.com</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="23">
+      <device>temp</device>
+      <path>https://www.stackoverflow.com</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="24">
+      <device>temp</device>
+      <path>https://www.bookmyshow.com</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="25">
+      <device>temp</device>
+      <path>https://www.bookmyshow.com</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="26">
+      <device>temp</device>
+      <path>https://archive.org</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="27">
+      <device>temp</device>
+      <path>https://archive.org</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="28">
+      <device>temp</device>
+      <path>https://www.mit.edu</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="29">
+      <device>temp</device>
+      <path>https://www.mit.edu</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="30">
+      <device>temp</device>
+      <path>https://www.pornhub.com</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="31">
+      <device>temp</device>
+      <path>https://www.pornhub.com</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="32">
+      <device>temp</device>
+      <path>https://www.pcgamer.com</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="33">
+      <device>temp</device>
+      <path>https://www.pcgamer.com</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="34">
+      <device>temp</device>
+      <path>https://www.cic.gc.ca</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="35">
+      <device>temp</device>
+      <path>https://www.cic.gc.ca</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="36">
+      <device>temp</device>
+      <path>https://www.paypal.com</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="37">
+      <device>temp</device>
+      <path>https://www.paypal.com</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="38">
+      <device>temp</device>
+      <path>https://www.tinder.com</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="39">
+      <device>temp</device>
+      <path>https://www.tinder.com</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+  </runsDone>
+</experiment>

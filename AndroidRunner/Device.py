@@ -107,7 +107,8 @@ class Device:
         """Root unplugs the device"""
         self.root_plug_value = Adb.shell_su(self.id, 'cat %s' % self.root_unplug_file)
         if 'su: not found' in self.root_plug_value:
-            raise AdbError("%s %s: is not rooted" % (self.id, self.name))
+            #raise AdbError("%s %s: is not rooted" % (self.id, self.name))
+            pass
         if 'No such file or directory' in self.root_plug_value:
             raise ConfigError('%s %s: the root unplug file seems to be invalid' % (self.id, self.name))
         if restart:

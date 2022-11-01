@@ -129,13 +129,13 @@ class Trepn(Profiler):
 
             # adb returns instantly, while the command takes time so we wait till Trepn converted the databsae to a
             # csv file on the mobile device.
-            util.wait_until(self.file_exists_and_not_empty, 10, 1, device, Trepn.DEVICE_PATH, csv_filename)
+            util.wait_until(self.file_exists_and_not_empty, 30, 1, device, Trepn.DEVICE_PATH, csv_filename)
 
             device.pull(op.join(Trepn.DEVICE_PATH, csv_filename), self.output_dir)
 
             # adb returns instantly, while the command takes time so we wait till the files are transferred from the
             # device to the host.
-            util.wait_until(os.path.exists, 10, 1, op.join(self.output_dir, csv_filename))
+            util.wait_until(os.path.exists, 30, 1, op.join(self.output_dir, csv_filename))
 
             # Delete the originals
             device.shell('rm %s' % op.join(Trepn.DEVICE_PATH, newest_db))
